@@ -1,7 +1,7 @@
 {
-  "name": "electron-template",
-  "productName": "electron-template",
-  "version": "1.0.0",
+  "name": "Updater_OpenSrc",
+  "productName": "Updater_OpenSrc",
+  "version": "2.0.0",
   "description": "My Electron application description",
   "main": "src/main.js",
   "scripts": {
@@ -18,7 +18,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "dotenv": "^16.3.1",
+    "electron-log": "^4.4.8",
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^2.0.1"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
@@ -26,6 +29,7 @@
     "@electron-forge/maker-rpm": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
     "@electron-forge/maker-zip": "^6.1.1",
+    "@electron-forge/publisher-github": "^6.1.1",
     "electron": "24.4.0"
   }
 }
