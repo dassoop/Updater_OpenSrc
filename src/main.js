@@ -2,11 +2,11 @@ const { app, BrowserWindow, ipcMain , Menu} = require('electron');
 const path = require('path');
 const functions = require('./functions.js')
 
-// require('update-electron-app')({
-//   repo: 'dassoop/updater-opensrc',
-//   updateInterval: '1 hour',
-//   logger: require('electron-log')
-// })
+require('update-electron-app')({
+  repo: 'dassoop/Updater_OpenSrc',
+  updateInterval: '1 hour',
+  logger: require('electron-log')
+})
 
 if (require('electron-squirrel-startup')) {
   app.quit();
